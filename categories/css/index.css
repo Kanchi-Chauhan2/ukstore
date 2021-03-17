@@ -288,10 +288,14 @@ button {
       align-items: center;
       cursor: pointer; }
       .collections__sort--selected::after {
-        content: '';
+        content: 'v';
         height: 1rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 2rem;
         width: 1rem;
-        background-color: red;
+        /* background-color: red; */
         margin-left: auto;
         cursor: pointer; }
     .collections__sort--selection {

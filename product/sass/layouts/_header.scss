@@ -164,3 +164,122 @@
     }
 
 }
+
+.dropdown{
+    text-decoration: none;
+    color:#444444;
+
+    display: block;
+    position: absolute;
+    top: 15rem;
+    z-index: 10000000000000;
+    width: 100%;
+    visibility:hidden;
+    &__column{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        color:#444444;
+        &--list{
+            margin-top:1rem;
+            margin-bottom:1rem;
+        }
+        &--listItem a{
+            color:#444444;
+            margin-top:1rem;
+        }
+    }
+}
+.shop-dropdown{
+    text-decoration: none;
+    color:#444444;
+
+    display: block;
+    position: absolute;
+    top: 15rem;
+    z-index: 10000000000000;
+    width: 100%;
+    visibility:hidden;
+    &__column{
+        display:flex;
+        margin-right:1rem;
+        margin-bottom:1rem;
+        justify-items: center;
+        justify-content: center;
+
+        &--list a{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            margin-right: 1rem;
+            margin-bottom:1rem;
+            justify-items: center;
+            justify-content: center;
+
+        }
+    }
+
+}
+.products-dropdown{
+    text-decoration: none;
+    color:#444444;
+
+    display: block;
+    position: absolute;
+    top: 15rem;
+    z-index: 10000000000000;
+    width: 100%;
+    visibility:hidden;
+    &__column--listItem a{
+        display:flex;
+        justify-content: center;
+        color:#444444;
+    }
+}
+.tv-dropdown{
+    text-decoration: none;
+    color:#444444;
+
+    display: block;
+    position: absolute;
+    top: 15rem;
+    z-index: 10000000000000;
+    width: 100%;
+    text-align:center;
+    visibility:hidden;
+
+}
+.links-dropdown{
+    text-decoration: none;
+    color:#444444;
+
+    display: block;
+    position: absolute;
+    top: 15rem;
+    z-index: 10000000000000;
+    width: 100%;
+    visibility:hidden;
+    &__column{
+        display:flex;
+        justify-content: center;
+        
+        &--list{
+            margin-top:2rem;
+            margin-right:3rem;
+        }
+        &--listItem a{
+            color:#444444;
+            margin-top:2rem;
+            margin-bottom:1rem;
+        }
+    }
+
+}
+.select{
+    padding:1rem;
+    border:none;
+    background-color: rgba(254, 235, 231, 0.95);
+    transition:.3s ease;
+    visibility: visible;
+}

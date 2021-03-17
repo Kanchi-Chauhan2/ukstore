@@ -114,7 +114,7 @@
     <div class="cart">
         <div class="cart__shadow"></div>
         <div class="cart__container">
-            <div class="cart__close"></div>
+            <div class="cart__close">&times;</div>
             <p class="paragraph--3 cart__paragraph cart__container--heading">
                 YOUR CART
             </p>
@@ -215,13 +215,13 @@
         <div class="header__menu">
             <ul class="header__menu--list">
                 <li class="header__menu--item header__menu--dropdownItem paragraph--6" onmouseover="dropdown()" onmouseleave="removedropdown()">
-                    <a href="#" class="header__menu--link">CATEGORY<svg class="header__menu--dropdown"> <use href='images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
+                    <a href="#" class="header__menu--link">CATEGORY<svg class="header__menu--dropdown"> <use href='../images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
                 </li>
                 <li class="header__menu--item header__menu--dropdownItem paragraph--6"  onmouseover="shopdropdown()" onmouseleave="removeshopdropdown()">
-                    <a href="#" class="header__menu--link">SHOP<svg class="header__menu--dropdown"> <use href='images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
+                    <a href="#" class="header__menu--link">SHOP<svg class="header__menu--dropdown"> <use href='../images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
                 </li>
                 <li class="header__menu--item header__menu--dropdownItem paragraph--6" onmouseover="productsdropdown()" onmouseleave="removeproductsdropdown()">
-                    <a href="#" class="header__menu--link">PRODUCTS<svg class="header__menu--dropdown"> <use href='images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
+                    <a href="#" class="header__menu--link">PRODUCTS<svg class="header__menu--dropdown"> <use href='../images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
                 </li>
                 <li class="header__menu--item paragraph--6">
                     <a href="categories/?c=23" class="header__menu--link">DISCOUNT SET</a>
@@ -230,10 +230,10 @@
                     <a href="#" class="header__menu--link">Before/After Photos</a>
                 </li>
                 <li class="header__menu--item header__menu--dropdownItem paragraph--6" onmouseover="tvdropdown()" onmouseleave="removetvdropdown()">
-                    <a href="#" class="header__menu--link">TV/AD<svg class="header__menu--dropdown"> <use href='images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
+                    <a href="#" class="header__menu--link">TV/AD<svg class="header__menu--dropdown"> <use href='../images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
                 </li>
                 <li class="header__menu--item header__menu--dropdownItem paragraph--6" onmouseover="linksdropdown()" onmouseleave="removelinksdropdown()" >
-                    <a href="#" class="header__menu--link">LINKS<svg class="header__menu--dropdown"> <use href='images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
+                    <a href="#" class="header__menu--link">LINKS<svg class="header__menu--dropdown"> <use href='../images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
                 </li>
                 <li class="header__menu--item paragraph--6">
                     <a href="Blogs/AboutUs.php" class="header__menu--link">ABOUT US</a>
@@ -290,15 +290,15 @@
     <div class="shop-dropdown">
         <div class="shop-dropdown__column">
             <ul class="shop-dropdown__column--list">
-            <li class="shop-dropdown__column--listItem"><a href="product/?p=10"><img class="shop-dropdown__column--imgbox" src="images/shop11.png" alt="Ten years Younger Skin">Ten years younger skin rejuvenator</a></li>
+            <li class="shop-dropdown__column--listItem"><a href="product/?p=10"><img class="shop-dropdown__column--imgbox" src="../images/shop11.png" alt="Ten years Younger Skin">Ten years younger skin rejuvenator</a></li>
             </ul>
         
             <ul class="shop-dropdown__column--list">
-            <li class="shop-dropdown__column--listItem"><a href="product/?p=2"><img class="shop-dropdown__column--imgbox" src="images/shop12.png" alt="BC Active Lightening Lotion">BC Active Lightening System</a></li>
+            <li class="shop-dropdown__column--listItem"><a href="product/?p=2"><img class="shop-dropdown__column--imgbox" src="../images/shop12.png" alt="BC Active Lightening Lotion">BC Active Lightening System</a></li>
             </ul>
        
             <ul class="shop-dropdown__column--list">
-            <li class="shop-dropdown__column--listItem"><a href="product/?p=11"><img class="shop-dropdown__column--imgbox" src="images/shop13.png" alt="BC Extra Strength Lightening Wash">BC Extra Strength Lightening Wash</a></li>
+            <li class="shop-dropdown__column--listItem"><a href="product/?p=11"><img class="shop-dropdown__column--imgbox" src="../images/shop13.png" alt="BC Extra Strength Lightening Wash">BC Extra Strength Lightening Wash</a></li>
             </ul>
         </div>
     </div>
@@ -335,10 +335,10 @@
             <li class="links-dropdown__column--listItem"><a href="Blogs/Bc.php">WHAT BC CAN DO FOR YOU</a></li>
             </ul>
             <ul class="links-dropdown__column--list">
-            <li class="links-dropdown__column--listItem"><a href="#"><img class="links-dropdown__column--imgbox" src="images/links1.png" alt="Lightening Serum"></a></li>
+            <li class="links-dropdown__column--listItem"><a href="#"><img class="links-dropdown__column--imgbox" src="../images/links1.png" alt="Lightening Serum"></a></li>
             </ul>
             <ul class="links-dropdown__column--list">
-            <li class="links-dropdown__column--listItem"><a href="#"><img class="links-dropdown__column--imgbox" src="images/link2.png" alt="Gold Face Softer Serum"></a></li>
+            <li class="links-dropdown__column--listItem"><a href="#"><img class="links-dropdown__column--imgbox" src="../images/link2.png" alt="Gold Face Softer Serum"></a></li>
             </ul>
         </div>
     </div>
@@ -718,20 +718,20 @@
             <div class="payment-container">
             <div class="paypal-icon">
                 <a href="#">
-                <img src="images/paypal_png-01.png" class="paypal-image" alt="paypal-icon"/>
+                <img src="../images/paypal_png-01.png" class="paypal-image" alt="paypal-icon"/>
                 </a>
             </div>
             <div class="footer-payment">
             <a href="#" class="payment-item">
-                <img src="images/visa_png-01.png" class="payment-image" alt="visa-icon"/></a>
+                <img src="../images/visa_png-01.png" class="payment-image" alt="visa-icon"/></a>
             <a href="#" class="payment-item">                
-                <img src="images/american_exp_png-01.png" class="payment-image" alt="visa-icon"/></a>
+                <img src="../images/american_exp_png-01.png" class="payment-image" alt="visa-icon"/></a>
             </a>
             <a href="#" class="payment-item">                
-                <img src="images/mastercard_png-01.png" class="payment-image" alt="visa-icon"/></a>
+                <img src="../images/mastercard_png-01.png" class="payment-image" alt="visa-icon"/></a>
             </a>
             <a href="#" class="payment-item">                
-                <img src="images/maestro_png-01.png" class="payment-image" alt="visa-icon"/></a>
+                <img src="../images/maestro_png-01.png" class="payment-image" alt="visa-icon"/></a>
             </a>
             </div>
             </div>
@@ -768,22 +768,22 @@
                 <div class="footer__subscribe--socialBox">
                 <a href=https://www.facebook.com/bodycontours" target="_blank" class="footer__subscribe--link">
                     <svg class="footer__subscribe--icon">
-                        <use href='images/sprite.svg#icon-facebook'></use>
+                        <use href='../images/sprite.svg#icon-facebook'></use>
                     </svg>
                 </a>
                 <a href="https://www.instagram.com/bodycontoursuk/" target="_blank" class="footer__subscribe--link">
                     <svg class="footer__subscribe--icon">
-                        <use href='images/sprite.svg#icon-instagram'></use>
+                        <use href='../images/sprite.svg#icon-instagram'></use>
                     </svg>
                 </a>
                 <a href="https://www.twitter.com/bodycontours1" target="_blank" class="footer__subscribe--link">
                     <svg class="footer__subscribe--icon">
-                        <use href='images/sprite.svg#icon-twitter'></use>
+                        <use href='../images/sprite.svg#icon-twitter'></use>
                     </svg>
                 </a>
                 <a href="#" class="footer__subscribe--link">
                     <svg class="footer__subscribe--icon">
-                        <use href='images/sprite.svg#icon-pinterest'></use>
+                        <use href='../images/sprite.svg#icon-pinterest'></use>
                     </svg>
                 </a>
             </div>

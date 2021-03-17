@@ -45,12 +45,16 @@
             align-items: center;
             cursor: pointer;
             &::after{
-                content: '';
-                height: 1rem;
-                width: 1rem;
-                background-color: red;
-                margin-left: auto;
-                cursor: pointer;
+                content: 'v';
+    height: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2rem;
+    width: 1rem;
+    /* background-color: red; */
+    margin-left: auto;
+    cursor: pointer;
             }
 
         }
