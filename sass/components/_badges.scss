@@ -1,0 +1,63 @@
+.badges{
+    background-color: #feebe7;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    padding: 10rem 5rem;
+    overflow: hidden;
+
+    @media only screen and (max-width: 48em){
+        height: auto;
+        padding: 5rem;   
+    }
+
+    @media only screen and (max-width: 48em){
+        padding: 2rem;
+    }
+
+    &__box{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__container{
+        position: relative;
+        width: calc(120%);
+        height: 100%;
+
+        @media only screen and (max-width: 48em){
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+    &__link{
+        height: 100%;
+        width: calc(16.67% - 5rem);
+        float: left;
+        margin-right: 5rem;
+
+        @media only screen and (max-width: 48em){
+            width: 12%;
+            margin-right: 3rem;
+            float: unset;
+        }
+
+        @media only screen and (max-width: 28.125em){
+            margin-right: 1.5rem;
+            width: 17%;
+        }
+
+        &:last-child{
+            margin-right: 0 !important;
+        }
+    }
+    &__images{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}

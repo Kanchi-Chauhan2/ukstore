@@ -1,0 +1,1 @@
+var addAttributeURL = 'http://localhost/ukstore/Admin/php/attribute/addAttribute.php';

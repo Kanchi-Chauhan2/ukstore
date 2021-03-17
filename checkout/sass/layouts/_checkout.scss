@@ -1,0 +1,138 @@
+.checkout{
+    padding: 10rem 5rem;
+    &__heading{
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    &__grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-auto-rows: auto;
+        grid-gap: 3rem;
+        justify-content: center;
+    }
+    &__cart{
+        position: relative;
+    }
+    &__title{
+        width: 100%;
+        padding: .9rem 0 1rem 1rem;
+        background: #f5f5f5;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+    }
+    &__product{
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 15rem 1fr;
+        grid-gap: 5rem;
+        grid-auto-rows: auto;
+        justify-content: center;
+        position: relative;
+        padding: 2rem;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    &__productClose{
+        position: absolute;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 10rem;
+        background-color: #cccccc;
+        top: 0;
+        left: 0;
+        z-index: 100;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__imagebox{
+        height: 100%;
+        position: relative;
+        width: 100%;
+        background-color: #fcf8f7;
+        padding: 3rem;
+    }
+    &__image{
+        object-fit: cover;
+        width: 100%;
+        object-position: center center;
+    }
+    &__productDetails{
+        position: relative;
+    }
+    &__productName{
+        font-weight: 400;
+        color: #444;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+    }
+    &__productAttributes{
+        color: #444;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+    &__productPrice{
+        color: #444;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+    &__productQuantity{
+        color: #444;
+        display: flex;
+        align-items: center;
+        border: 1px solid #444444;
+        width: min-content;
+        margin-bottom: 2rem;
+        background-color: #fff;
+        &--minus{
+            padding: 1.5rem;
+            cursor: pointer;
+        }
+        &--number{
+            padding: 1.5rem 0;
+            border-left: 1px solid #444444;
+            border-right: 1px solid #444444;
+            background-color: #ccc;
+            color: #000;
+            width: 6rem;
+            display: flex;
+            justify-content: center;
+        }
+        &--add{
+            padding: 1.5rem;
+            cursor: pointer;
+        }
+    }
+    &__productTotalPrice{
+        color: #444444;
+    }
+    &__order{
+        position: relative;
+        width: 100%;
+    }
+    &__title{
+
+    }
+    &__subTotal{
+        display: flex;
+        color: #444;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    &__taxes{
+        margin-bottom: 1rem;
+    }
+    &__button{
+        text-align: center;
+        display: flow-root;
+        width: 100%;
+        padding: 1.75rem 0;
+        border: 0;
+        border-radius: 3px;
+        background-color: #444444;
+        color: #fff;
+        text-transform: uppercase;
+    }
+}

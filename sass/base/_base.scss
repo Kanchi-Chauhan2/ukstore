@@ -1,0 +1,40 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-position: center;
+}
+
+html{
+    font-size: 62.5%;
+
+    @media only screen and (max-width: 64em){
+        font-size: 56.25%;
+    }
+
+    @media only screen and (max-width: 48em){
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: 28.125em){
+        font-size: 43.75%;
+    }
+
+}
+
+body{
+    width: 100%;
+    font-family: $font--josefin;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    font-family: $font--josefin;
+}

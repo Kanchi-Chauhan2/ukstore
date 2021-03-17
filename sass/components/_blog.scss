@@ -1,0 +1,100 @@
+.blog{
+    width: 100%;
+    padding: 5rem 5rem;
+    position: relative;
+    text-align: center;
+
+    @media only screen and (max-width: 28.125em){
+        padding: 2rem;
+    }
+
+    &__heading{
+        font-weight: normal;
+        font-family: $font--caramello;
+    }
+
+    &__paragraph{
+        font-weight: normal;
+    }
+
+    &__top{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        &--heading{
+            color: #feebe7;
+            z-index: 0;
+            position: relative;
+
+            @media only screen and (max-width: 48em){
+                font-size: 6rem;
+            }
+
+        }
+        &--paragraph{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            transform: translate(-50%,-50%);
+            @media only screen and (max-width: 48em){
+                font-size: 1.5rem;
+            }
+        }
+    }
+    &__posts{
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        grid-gap: 3.5rem;
+        transform:translateX(34rem);
+        text-align: left;
+
+        @media only screen and (max-width: 28.125em){
+            grid-template-columns: 1fr;
+        }
+
+    }
+    &__post{
+        width: 100%;
+        position: relative;
+        &--imagebox{
+            width: 100%;
+            margin-bottom: 2rem;
+            position: relative;
+            height: fit-content;
+            display: block;
+        }
+        &--image{
+            width: 100%;
+            object-fit: cover;
+        }
+        &--headingLink{
+            display: inline-block;
+            letter-spacing: .75px;
+            color: #444;
+            margin-bottom: 1rem;
+        }
+        &--date{
+            color: #919191;
+            margin-bottom: 2rem;
+        }
+        &--button{
+            display: inline-block;
+            color: #444444;
+            border-bottom: 1px solid;
+        }
+    }
+
+    &__button{
+        display: inline-block;
+        background: #444444;
+        color: #ffffff;
+        border-color: rgba(0,0,0,0);
+        padding: 1.6rem;
+        border-radius: 3px;
+        margin-top: 5rem;
+    }
+
+}

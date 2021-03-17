@@ -1,0 +1,52 @@
+.create{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #444444;
+    text-align: center;
+
+    & > *{
+        width: 35rem;
+    }
+    &__paragraph{
+        font-family: $font--josefin;
+        font-weight: normal;
+    }
+    &--heading{
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &--firstName,&--lastName,&--email,&--password{
+            margin-bottom: 2rem;
+        }
+    }
+    &__textbox{
+        width: 100%;
+        border: 1px solid #ebebeb;
+        padding: 1.4rem 1.5rem;
+        border-radius: 3px;
+        &:focus{
+            outline: none;
+        }
+    }
+    
+    &__account{
+        width: 100%;
+        display: block;
+        border: 0;
+        background-color: #444444;
+        color: #ffffff;
+        padding: 1.5rem 0;
+        border-radius: 3px;
+        &:focus{
+            outline: none;
+        }
+    }
+}

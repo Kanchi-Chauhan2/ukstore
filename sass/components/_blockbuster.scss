@@ -1,0 +1,98 @@
+.blockbuster{
+
+    padding: 5rem 3rem 8rem;
+    text-align: center;
+    position: relative;
+
+    @media only screen and (max-width : 28.125em){
+        padding: 2rem 3rem;
+    }
+
+    &__heading{
+        font-weight: normal;
+        font-family: $font--caramello;
+    }
+
+    &__paragraph{
+        
+    }
+
+    &__top{
+        position: relative;
+        &--heading{
+            color: #feebe7;
+            z-index: 0;
+            position: relative;
+
+            @media only screen and (max-width: 48em){
+                font-size: 6rem;
+            }
+            
+        }
+        &--paragraph{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+
+            @media only screen and (max-width: 48em){
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+
+    &__products{
+
+        width: 100%;
+        padding: 0 4.5rem;
+
+        @media only screen and (max-width : 28.125em){
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        &--box{
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            @media only screen and (max-width : 28.125em){
+                width: 30rem;
+                margin-top: 3rem;
+            }
+        }
+
+        &--container{
+            width: calc(30*8rem);
+            position: relative;
+            display: table;
+            transition: all .4s ease-in-out !important;
+            left: 0;
+        }
+        &--button{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 10rem;
+
+            background-color: #000;
+            fill: #fff;
+            cursor: pointer;
+            z-index: 10;
+
+            &--right{
+                right: 3rem;
+            }
+            &--left{
+                left: 3rem;
+            }
+        }
+    }
+
+
+}

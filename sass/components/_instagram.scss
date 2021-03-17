@@ -1,0 +1,18 @@
+.instagram{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    grid-auto-rows: auto;
+    position: relative;
+
+    &__link{
+        display: inline-flex;
+        width: 100%;
+        position: relative;
+        height: fit-content;
+    }
+    &__image{
+        width: 100%;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,137 @@
+.attributes{
+    //display: none;
+    &__top--heading{
+        transition: color .2s ease-in-out 0s, border-bottom .2s ease-in-out 0s;
+        display: inline-flex;
+        cursor: pointer;
+        border-bottom: 1px solid transparent;
+        margin-bottom: 2.5rem;
+        margin-top: 1.5rem;
+
+        &:hover {
+            color: var(--blue);
+            border-bottom: 1px solid var(--blue);
+        }
+
+    }
+    &__form{
+        background-color: #fff;
+        padding: 2.5rem 3rem;
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        position: relative;
+    }
+    &__textbox{
+        display: block;
+        padding: 1rem 2.1rem;
+        width: 50%;
+        font-size: 1.5rem;
+        font-family: $font--roboto;
+        font-weight: 400;
+
+        &:not(:last-of-type){
+            margin: 1rem 0;
+        }
+
+        &:focus{
+            outline: none;
+        }
+
+    }
+    &__button{
+        display: inline-block;
+        text-transform: uppercase;
+        padding: .75rem 1.75rem;
+        margin-top: 2rem;
+
+        &:focus{
+            outline: none;
+        }
+
+    }
+
+    &__table{
+        background-color: #fff;
+        padding: 2.5rem 3rem;
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        position: relative;
+        border-spacing: 2px 0px;
+        min-width: 50rem;
+
+        & thead{
+            background-color: #aaa;
+            & th{
+                font-size: 1.5rem;
+                padding: 1.2rem 2rem;
+                font-weight: 600;
+                font-family: $font--roboto;
+                color: #fff;
+                text-align: start;
+
+                &:first-child{
+                    width: 5%;
+                }
+
+
+                &:last-child{
+                    width: 15%;
+                    text-align: center;
+                }
+
+            }
+        }
+
+        & tbody{
+            background-color: #ddd;
+            color: #333;
+
+            & tr:nth-child(2n + 1){
+                background-color: #ccc;
+            }
+
+            & tr td{
+                font-family: $font--roboto;
+                font-weight: 500;
+            }
+
+            & tr td:first-child{
+                font-weight: 600;
+            }
+
+            & tr td:not(:last-child){
+                font-size: 1.4rem;
+                padding: 1.2rem 2rem;
+            }
+
+            & tr td:last-child{
+                text-align: center;
+                color: #fff;
+                font-size: 1rem;
+            }
+
+        }
+
+        &--function{
+            padding: .35rem .75rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 10rem;
+
+        }
+
+        &--edit{
+            background-color: var(--green);
+            margin-right: .5rem;
+        }
+
+        &--delete{
+            background-color: var(--red);
+        }
+
+    }
+
+}

@@ -1,0 +1,119 @@
+.footer-main{
+    width: 100%;
+    padding: 5rem 7rem 8rem;
+    background-color: #000;
+    color:#fff;
+  }
+  .payment-container{
+    width:35rem;
+    height:11rem;
+    position:relative;
+  }
+  .flexx-container{
+    display:flex;
+    flex-direction:row;
+    padding-left:6rem;
+    &--1{
+        border:1px solid #444444;
+        border-radius:1rem;
+        height:15rem;
+        margin-right:4rem;
+    }
+    &--2{
+        padding:4rem;
+    }
+  }
+  .flexx-container--1:hover{
+    border:1px solid white;
+  }
+  .payment-image{
+    width:4rem;
+    margin-right:1.5rem;
+    margin-left:2rem;
+  }
+  .paypal-icon{
+    position:absolute;
+    top:-4.5rem;
+    left:1.5rem;
+    width:14rem;
+    padding:1.1rem;
+    background-color:black;
+  }
+  
+  .footer-payment{
+    padding-top:6rem;
+    padding-bottom:8rem;
+  }
+  .paypal-image{
+    width:11rem;
+  }
+  .footer__store{
+    font-size:1.2rem;
+    width:15rem;
+  }
+  .heading{
+    padding-bottom:1.5rem;
+    font-size:1.6rem;
+    color:#444;
+    font-weight:800;
+  }
+  .break{
+    display:block;
+    padding:0.5rem;
+  }
+  .footer__info{
+    padding:4rem;
+    width:21rem;
+  }
+  .footer-info-flex--1{
+    display:inline-block;
+    color:white;
+    font-size:1.3rem;
+    padding-bottom:0.5rem;
+  }
+  .footer-info-flex--2{
+    display:inline-block;
+    color:white;
+    font-size:1.3rem;
+    padding-bottom:0.5rem;
+  }
+  .footer-info-flex--3{
+    display:inline-block;
+    color:white;
+    font-size:1.3rem;
+    padding-bottom:0.5rem;
+  }
+  .footer__subscribe{
+    padding: 4rem;
+  
+    @media only screen and (max-width: 48em){
+        padding-left: 2rem;
+    }
+  
+    @media only screen and (max-width: 28.125em){
+        padding-left: 0;
+    }
+  
+    &--heading{
+        margin-bottom: 2rem;
+        color:#444;
+        font-weight:800;
+    }
+    &--socialBox{
+        display: flex;
+    }
+    &--link{
+        height: 2.5rem;
+        width: 2.5rem;
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+    &--icon{
+        height: 100%;
+        width: 100%;
+        fill: #fff;
+    }
+  }
+  
+  

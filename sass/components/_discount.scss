@@ -1,0 +1,65 @@
+.discount{
+
+    padding: 5rem 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 42rem;
+
+    @media only screen and (max-width: 48em){
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto; 
+        grid-gap: 3rem;  
+    }
+
+    &__paragraph{
+        font-weight: normal;
+    }
+
+    &__left{
+
+        padding-left: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media only screen and (max-width: 48em){
+            padding-left: 0;
+        }
+
+        &--heading{
+            margin-bottom: 1.8rem;
+            color: #3a3a3a;
+        }
+        &--paragraph{
+            line-height: 1.4;
+            letter-spacing: .75px;
+            margin-bottom: 1.8rem;
+            color: #4a4a4a;
+        }
+        &--link{
+            color: #444444;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #444444;
+            width: fit-content;
+            display: table;
+        }
+    }
+
+    &__right{
+
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        @media only screen and (max-width: 48em){
+            height: 30rem;
+            
+        }
+
+        &--image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

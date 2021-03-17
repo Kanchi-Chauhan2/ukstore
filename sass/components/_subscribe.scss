@@ -1,0 +1,63 @@
+.subscribe{
+    padding: 7rem 0;
+    width: 100%;
+    background-color: #FEEBE7;
+    color: #444444;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media only screen and (max-width: 48em){
+        padding: 5rem 2rem;
+    }
+
+    &__heading{
+        margin-bottom: 1.5rem;
+    }
+
+    &__paragraph{
+        margin-bottom: 3rem;
+    }
+
+    &__form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    &__textbox{
+        padding: 1.5rem 1.5rem;
+        font-weight: normal;
+        border: 0px;
+        font-family: $font--josefin;
+        width: 25rem;
+        margin-right: 2rem;
+
+        &:focus{
+            outline: none;
+        }
+
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+        border: 0;
+        color: #fff;
+        background: #444444;
+        text-transform: uppercase;
+        font-family: $font--josefin;
+        font-size: 1.3rem;
+        font-weight: normal;
+        padding: 0 1.6rem;
+        border-radius: 3px;
+        &:focus{
+            outline: 0;
+        }
+    }
+
+}

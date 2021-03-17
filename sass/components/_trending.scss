@@ -1,0 +1,46 @@
+.trending{
+
+    height: 88rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: url(../images/bg-image.jpg);
+    background-size: cover;
+
+    @media only screen and (max-width: 28.125em){
+        height: 45rem;
+    }
+
+    &__paragraph{
+        font-weight: normal;
+    }
+
+    &__box{
+
+        padding: 3.2rem 6.4rem;
+        background-color: #fff;
+
+        @media only screen and (max-width: 28.125em){
+            width: 75%;
+            padding: 2rem;
+        }
+
+        &--heading{
+            margin-bottom: 1.5rem;
+            color: #444444;
+        }
+        &--paragraph{
+            margin-bottom: 1.5rem;
+            color: #444444;
+        }
+        &--link{
+            border-bottom: 1px solid #444444;
+            color: #444444;
+        }
+    }
+}

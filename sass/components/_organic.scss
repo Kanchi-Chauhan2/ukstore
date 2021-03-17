@@ -1,0 +1,48 @@
+.organic{
+    height: 95rem;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 48em){
+        height: 30rem;   
+    }
+
+    @media only screen and (max-width: 28.125em){
+        height: 20rem;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    &__overlay{
+        height: 100%;
+        width: 100%;
+        background-color: #feebe7;
+
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: 5;
+
+    }
+
+    &__paragraph{
+        position: relative;
+        z-index: 10;
+        color:white;
+    }
+    &__video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

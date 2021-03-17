@@ -1,0 +1,355 @@
+.dashboard{
+    display: none;
+    &__heading{
+        font-family: $font--roboto;
+        font-weight: 700;
+    }
+    &__paragraph{
+        font-family: $font--roboto;
+        font-weight: 500;
+    }
+
+    //-------------------------------------CARDS---------------------------------
+
+    &__cards{
+        width: 100%;
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows: 19rem;
+        grid-gap: 2rem;
+
+    }
+
+    &__card{
+
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 1.75rem;
+
+        &--flex{
+            height: 5rem;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &--iconbox{
+            width: 5rem;
+            height: 100%;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--icon{
+            height: 3.3rem;
+            width: 2.5rem;
+            background-color: #fff;
+        }
+
+        &--percentbox{
+            display: flex;
+            align-items: center;
+        }
+
+        &--arrow{
+            height: 1.8rem;
+            width: 1.7rem;
+            margin-right: 3px;
+            &__down{
+                background-color: #e84646;
+            }
+
+            &__up{
+                background-color: #699834;
+            }
+        }
+
+        &--number{
+            margin-bottom: 1rem;
+        }
+
+        &--title{
+            margin-bottom: 1rem;
+            color: #757575;
+        }
+
+        &--loadpercentbox{
+            height: 6px;
+            width: 100%;
+            background-color: #e9ecef;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        &--customers{
+            &__iconbox{
+                background-color: #2962ff;
+            }
+            &__icon{
+
+            }
+            &__percent{
+
+            }
+
+            &__loadpercent{
+                height: 100%;
+                width: 50%;
+                background-color: #2962ff;
+            }
+        }
+
+        &--products{
+            &__iconbox{
+                background-color: #7bb13c;
+            }
+            &__icon{
+
+            }
+            &__percent{
+
+            }
+
+            &__loadpercent{
+                height: 100%;
+                width: 50%;
+                background-color: #7bb13c;
+            }
+        }
+
+        &--sales{
+            &__iconbox{
+                background-color: #e84646;
+            }
+            &__icon{
+
+            }
+            &__percent{
+
+            }
+
+            &__loadpercent{
+                height: 100%;
+                width: 50%;
+                background-color: #e84646;
+            }
+        }
+
+        &--revenue{
+            &__iconbox{
+                background-color: #ffbc34;
+            }
+            &__icon{
+
+            }
+            &__percent{
+
+            }
+
+            &__loadpercent{
+                height: 100%;
+                width: 50%;
+                background-color: #ffbc34;
+            }
+        }
+    }
+    
+    //-------------------------------------CHARTS---------------------------------
+
+    &__charts{
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 42rem;
+        grid-gap: 2.5rem;
+    }
+
+    &__chartbox{
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+
+        &--heading{
+            padding: 1.6rem 2.1rem;
+            border-bottom: 1px solid #eaeaea;
+        }
+    }
+
+    &__chart{
+        //+++++++++++++++++++++++++SALES++++++++++++++++++++++
+        &--sales{
+
+        }
+        //+++++++++++++++++++++++++ORDER STATUS++++++++++++++++++++++
+        &--orderstatus{
+
+        }
+        //+++++++++++++++++++++++++RECENT ORDER++++++++++++++++++++++
+        &--recentorder{
+            height: calc(100% - 6rem);
+            width: 100%;
+            position: relative;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+            &__table{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-auto-columns: auto;
+            }
+            
+            &__grid{
+                height: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: minmax(18rem, auto) 10rem 7rem 8.5rem 8rem;
+                grid-auto-rows: auto;
+                align-items: center;
+                transition: all .2s ease-in-out 0s;
+
+                &:first-child{
+                    background-color: #f8f9fa;
+                }
+
+                &:not(:last-child){
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                }
+
+                &:hover:not(:first-child){
+                    background-color: #f7f7f7;
+                }
+
+                &--item{
+                    
+                    &:nth-child(2n + 1){
+                        padding-left: 2.1rem;
+                    }
+                }
+                &--quantity{
+                    //margin-left: 2.5rem;
+                    text-align: center;
+                }
+                &--status{
+                    text-align: center;
+                    &__completed,
+                    &__pending,
+                    &__cancelled{
+                        padding: 2px;
+                        border-radius: 10px;
+                        color: #fff;
+                    }
+
+                    &__completed{
+                        background-color: #7bb13c;
+                    }
+
+                    &__pending{
+                        background-color: #ffbc34;
+                    }
+
+                    &__cancelled{
+                        background-color: #e84646;
+                    }
+                }
+                &--price{
+                    text-align: center;
+                }
+            }
+        }
+        //+++++++++++++++++++++++++FEED ACTIVITY++++++++++++++++++++++
+        &--feedactivity{
+            
+            padding-bottom: 0;
+            height: calc(100% - 6rem);
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            position: relative;
+            &__timeline{
+                display: grid;
+                height: 100%;
+                width: calc(100% - 2.1rem);
+                grid-template-columns: 2.5rem 1fr;
+                grid-template-rows: 100%;
+                grid-gap: 1.5rem;
+
+                position: absolute;
+                top: 2.1rem;
+                left: 2.1rem;
+
+                &--left{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(5,1fr);
+                    justify-items: center;
+                }
+
+                &--draw{
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                &--dot{
+                    position: relative;
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    border-radius: 20rem;
+                    background-color: #177dff;
+                    
+                }
+
+                &--line{
+                    height: calc(100% - 1.5rem);
+                    width: 2px;
+                    background-color: #e4e8eb;
+
+                }
+
+                &--draw:last-child &--line{
+                    display: none;
+                }
+
+                &--right{
+                    color: #777;
+                    height: 100%;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(5,1fr);
+                }
+                &--box{
+
+                }
+                &--date{
+
+                }
+                &--feed{
+                    
+                    & span{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+}

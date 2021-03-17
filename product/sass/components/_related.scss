@@ -1,0 +1,19 @@
+.related{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &--heading{
+        margin-bottom: 3rem;
+    }
+
+    &__container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,30rem);
+        grid-auto-rows: auto;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+}

@@ -1,0 +1,166 @@
+.header{
+    padding: 0 5rem;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    transition: all .4s ease-in-out 0s;
+    z-index: 10;
+
+    @media only screen and (max-width: 28.125em){
+        padding: 0 2rem;
+    }
+
+    background-color: rgb(254, 235, 231);
+
+    //-------------------------------   TOP  ------------------------------------------
+
+    &__top{
+        position: relative;
+        height: 11rem;
+
+        &--cart{
+            height: 2.8rem;
+            width: 2.8rem;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: none;
+            cursor: pointer;
+            fill: black;
+
+            @media only screen and (max-width: 28.125em){
+                display: block;
+            }
+
+        }
+        
+        &--logo{
+            height: 100%;
+            //width: 40rem;
+
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 2rem 0rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__link{
+                height: 100%;
+                
+            }
+
+            &__image{
+                height: 100%;
+                width: unset;
+                object-fit: contain;
+            }
+        }
+
+        &--iconbox{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            
+            height: 2.8rem;
+            width: fit-content;
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        &--icon{
+            height: 100%;
+            width: 2.8rem;
+            
+            cursor: pointer;
+            fill: #000;
+
+            &__search{
+                margin-right: 2.8rem;
+                @media only screen and (max-width: 28.125em){
+                    margin-right: 1rem;
+                }
+            }
+            &__account{
+                margin-right: 1rem;
+            }
+            &__logout{
+                display: none;
+            }
+        }
+
+
+    }
+    
+    //-------------------------------   MENU  ------------------------------------------
+
+    &__menu{
+        height: 4.5rem;
+        width: 100%;
+        position: relative;
+
+        @media only screen and (max-width: 28.125em){
+            display: none;
+        }
+
+        &--list{
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            display: flex;
+
+        }
+
+        &--item{
+            height: 100%;
+        }
+
+        &--link{
+            margin-left: 1.6rem;
+            margin-right: 1.6rem;
+            padding-bottom: 3.2rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #444444;
+            letter-spacing: 1px;
+            font-weight: normal;
+
+            backface-visibility: hidden;
+
+        }
+
+        &--link:hover &--dropdown{
+            transform: rotateZ(90deg);
+        }
+
+        &--dropdown{
+            height: 2rem;
+            width: 2rem;
+            margin-left: .75rem;
+            transform-origin: center center;
+            transition: all .4s ease-in-out 0s;
+        }
+
+        &--cart{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 0;
+        }
+
+    }
+
+}

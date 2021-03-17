@@ -1,0 +1,20 @@
+.container{
+    position: absolute;
+    
+    top: 6rem;
+    left: 24rem;
+    width: calc(100% - 24rem);
+    background-color: var(--light);
+    z-index: 1;
+    padding: 2.5rem;
+
+    &__user{
+        color: #333;
+        margin-bottom: .5rem;
+    }
+
+    &__title{
+        color: #9e9e9e;
+    }
+
+}

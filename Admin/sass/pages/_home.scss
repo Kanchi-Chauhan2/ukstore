@@ -1,0 +1,159 @@
+.addProduct{
+
+    &__form{
+        background-color: #fff;
+        padding: 2.5rem 3rem;
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        position: relative;
+        margin-top: 3rem;
+    }
+    &__text{
+        padding: 1rem 2.1rem;
+        display: block;
+        width: 50%;
+        font-size: 1.5rem;
+        font-family: $font--roboto;
+        font-weight: 400;
+    }
+
+    &__textarea{
+        margin-top: 2rem;
+        height: 10rem;
+    }
+
+    &__name{
+        font-family: $font--roboto;
+        font-weight: 400;
+    }
+    &__title{
+        margin: 1rem 0 0rem;
+    }
+    &__selectBox{
+        padding: 1rem 3rem;
+        min-width: 30rem;
+        text-align: center;
+        & option{
+
+        }
+    }
+    &__images{
+        display: flex;
+    }
+    &__image{
+        height: 10rem;
+        width: 10rem;
+        object-fit: contain;
+        margin-right: 1rem;
+    }
+    &__attributeBox{
+        width: 100%;
+        position: relative;
+        overflow-y: auto;
+        margin-bottom: 2rem;
+
+    }
+    &__attributesSelect{
+        
+        & option{
+
+        }
+    }
+    &__button{
+        padding: .75rem 1.75rem;
+        font-weight: 500;
+        font-family: $font--roboto;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    &__attributeTable{
+        position: relative;
+        min-width: 95rem;
+        margin-top: 3rem;
+        background-color: #000;
+
+        display: none;
+        &.active{
+            display: block;
+        }
+
+        & thead{
+            background-color: #aaa;
+            color: #fff;
+            & th{
+                font-size: 1.4rem;
+                font-family: $font--roboto;
+                font-weight: 600;
+                font-size: 1.5rem;
+                padding: 1.2rem 2rem;
+
+                &:nth-last-child(3),
+                &:nth-last-child(2){
+                    width: 18rem;
+                }
+
+                &:nth-last-child(4){
+                    width: 10rem;
+                }
+
+                &:last-child{
+                    width: 2rem;
+                }
+
+            }
+        }
+        & tbody{
+            text-align: center;
+            & tr td{
+                background-color: #ddd;
+                color: #333;
+                font-family: $font--roboto;
+                font-weight: 500;
+
+            }
+            & tr:nth-child(2n + 1){
+                background-color: #ccc;
+            }
+        }
+
+    }
+    &__stockBox{
+        padding: .5rem 1rem;
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+    }
+    &__priceBox{
+        padding: .5rem 1rem;
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+    }
+    &__sellingPriceBox{
+        padding: .5rem 1rem;
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+    }
+    &__actives{
+
+    }
+    &__radio{
+
+    }
+    &__noAttributeBox{
+
+        & > *:not(:last-child){
+            margin-bottom: 2rem;
+        }
+
+        & label{
+            font-size: 1.5rem;
+            margin-right: 2rem;
+        }
+    }
+    &__submit{
+        margin-top: 2rem;
+    }
+}

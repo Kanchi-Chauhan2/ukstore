@@ -1,0 +1,284 @@
+.productpage{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1rem 5.6rem;
+
+    @media only screen and (max-width: 28.125em){
+        padding: 1rem 2rem;
+    }
+
+    &__paragraph{
+        font-family: $font--josefin;
+        font-weight: normal;
+    }
+    &__top{
+        
+        &--slugs{
+            display: block;
+            width: 100%;
+
+            @media only screen and (max-width: 28.125em) {
+                display: block;
+            }
+
+            &__link{
+                color: #444444;
+                border-bottom: 1px solid #444444;
+            }
+            &__slash{
+                color: #444444;
+                margin: 0 1rem;
+            }
+            &__product{
+                color: #444444;
+            }
+        }
+    }
+
+    &__container{
+        margin-top: 5rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-auto-rows: auto;
+        grid-gap: 3rem;
+        border-radius: 2px;
+
+        @media only screen and (max-width: 71.5625em){
+            grid-template-columns: 26.5rem 1fr 1fr;
+        }
+
+        @media only screen and (max-width: 64em){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media only screen and (max-width: 34.375em){
+            grid-template-columns: 1fr;
+        }
+        
+        &--left{
+            padding-top: 2rem;
+            color: #444444;
+            padding-right: 2rem;
+
+            @media only screen and (max-width: 34.375em){
+                display: grid;
+                grid-template-columns: 1fr;
+                padding-top: 0;
+            }
+
+        }
+        &--center{
+            padding: 5rem 0;
+            width: 100%;
+            object-fit: contain;
+            background-color: #fcf8f7;
+
+            @media only screen and (max-width: 34.375em) {
+                grid-row: 1/2;
+                padding: 2rem 0;
+            }
+
+        }
+        &--right{
+            padding-top: 2rem;
+            width: 100%;
+            border-top: 1px solid #ebebeb;
+
+            @media only screen and (max-width: 64em){
+                grid-column: 1/-1;
+            }
+
+            & > p,& ul li{
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                //padding: 0 16px;
+                line-height: 1.2;
+                letter-spacing: .5px;
+                color: #444444;
+
+                & strong{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #000;
+                }
+                
+            }
+
+            & ul li{
+                list-style: outside;
+                color: #111111 !important;
+                line-height: 1;
+                margin-bottom: .5rem;
+            }
+
+            & ul{
+                padding-left: 2rem;
+                margin: 1.5rem 0;
+            }
+
+        }
+    }
+
+    &__name{
+        margin-bottom: 1.5rem;
+    }
+
+    &__price{
+        color: #333333;
+        &--delimeter{
+            color: #444444;
+            margin-left: .75rem;
+            text-decoration: line-through;
+        }
+    }
+
+    &__attributeContainer{
+        width: 100%;
+        position: relative;
+    }
+
+    &__attribute{
+        margin-top: 2rem;
+        &--title{
+            margin-bottom: 1rem;
+        }
+        &--select{
+            width: 100%;
+        }
+    }
+
+    &__select{
+        font-family: $font--josefin;
+        background: none;
+        padding: 0 10px;
+        width: 100%;
+        border: 1px solid #ebebeb;
+        height: 45px;
+        line-height: 45px;
+        
+        cursor: pointer;
+        outline: none;
+
+        &:focus,&:hover{
+            outline: none;
+        }
+
+        & option{
+            color: #000;
+            background-color: #fff;
+        }
+
+    }
+
+    &__quantityBox{
+        margin-top: 2rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 8rem 1fr;
+        grid-auto-rows: auto;
+        grid-gap: 2rem;
+    }
+
+    &__quantity{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border: 1px solid #ebebeb;
+        &--number{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &--changeBox{
+            width: 2rem;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        &--add{
+            width: 100%;
+            height: 2rem;
+            width: 2rem;
+            cursor: pointer;
+        }
+        &--sub{
+            width: 100%;
+            height: 2rem;
+            width: 2rem;
+            cursor: pointer;
+        }
+    }
+
+    &__button{
+        padding: 1.5rem;
+        width: 100%;
+        background-color: #444444;
+        color: #fff;
+        border: 0;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__addToCart{
+        font-family: $font--josefin;
+        width: 18rem;
+    }
+
+    &__images{
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 2rem;
+        grid-auto-rows: 11rem;
+        position: relative;
+        margin-top: 2rem;
+
+        @media only screen and (max-width: 34.375em){
+            grid-row: 1/2;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        &--image{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            cursor: pointer;
+            object-position: center;
+            background-color: #fcf8f7;
+            padding: 0 .5rem;
+        }
+    }
+
+    &__coverImage{
+        width: 100%;
+        object-fit: contain;
+        padding: 0 10rem;
+        height: 100%;
+        object-position: top;
+        @media only screen and (max-width: 71.5625em){
+            padding: 0 5rem;
+        }
+        @media only screen and (max-width: 64em){
+            padding: 0;
+        }
+    }
+
+    &__description{
+        padding: 0 16px;
+        line-height: 1.4;
+        letter-spacing: .5px;
+
+    }
+
+}

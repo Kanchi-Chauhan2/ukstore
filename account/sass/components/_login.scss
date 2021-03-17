@@ -1,0 +1,76 @@
+.login{
+    
+    width: 100%;
+    height: 50rem;
+    //display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #444444;
+    text-align: center;
+
+    & > *{
+        width: 35rem;
+    }
+
+    &__paragraph{
+        font-family: $font--josefin;
+        font-weight: normal;
+    }
+    &--heading{
+        margin-top: 7rem;
+    }
+    &__invalid{
+        visibility: hidden;
+        padding: 1.5rem;
+        border: 1px solid rgb(211, 108, 108);
+        margin-bottom: 2rem;
+        &--credentials{
+            color: rgb(211, 108, 108);
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &--email{
+            margin-bottom: 2rem;
+        }
+        &--password{
+            margin-bottom: 2rem;
+        }
+    }
+    &__textbox{
+        width: 100%;
+        border: 1px solid #ebebeb;
+        padding: 1.4rem 1.5rem;
+        border-radius: 3px;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__forgotPassword{
+        display: block;
+        color: #444444;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+    }
+    &__signIN{
+        width: 100%;
+        display: block;
+        border: 0;
+        background-color: #444444;
+        color: #ffffff;
+        padding: 1.5rem 0;
+        border-radius: 3px;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__createAccount{
+        color: #444444;
+        margin-top: 2rem;
+        border-bottom: 1px solid #444444;
+    }
+}
