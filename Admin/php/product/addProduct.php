@@ -34,7 +34,7 @@
 
         //-------------------------------------Add Product-----------------------------------------------
 
-        $query = "INSERT INTO `products`(`id`, `globalId`, `name`, `detail`, `categories`, `images`, `attributes`, `prices`, `sellingPrices`, `int_largePrice`, `int_smallPrice`, `stock`, `taxid`, `actives`, `time`, `date` VALUES ('$globalID','$name','$detail','$category','$images','$attributes','$prices','$sellingPrices','$int_largePrice','$int_smallPrice','$stock','$taxID','$actives','$time','$date')";
+        $query = "INSERT INTO `products`( `globalId`, `name`, `detail`, `categories`, `images`, `attributes`, `prices`, `sellingPrices`, `int_largePrice`, `int_smallPrice`, `stock`, `taxid`, `actives`, `time`, `date`) VALUES ('$globalID','$name','$detail','$category','$images','$attributes','$prices','$sellingPrices','$int_largePrice','$int_smallPrice','$stock','$taxID','$actives','$time','$date')";
         //echo $query;
         $query_exec = mysqli_query( $conn, $query );
         
