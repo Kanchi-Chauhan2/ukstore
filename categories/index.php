@@ -121,7 +121,7 @@
 
 </head>
 <body>
-    
+
     <!--``````````````````````````````````  CART  `````````````````````````````````````-->
 
     <div class="cart">
@@ -249,16 +249,16 @@
                     <a href="#" class="header__menu--link">LINKS<svg class="header__menu--dropdown"> <use href='../images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
                 </li>
                 <li class="header__menu--item paragraph--6">
-                    <a href="Blogs/AboutUs.php" class="header__menu--link">ABOUT US</a>
+                    <a href="../Blogs/AboutUs.php" class="header__menu--link">ABOUT US</a>
                 </li>
                 <li class="header__menu--item paragraph--6">
-                    <a href="Blogs/ContactUs.php" class="header__menu--link">CONTACT</a>
+                    <a href="../Blogs/ContactUs.php" class="header__menu--link">CONTACT</a>
                 </li>
                 <li class="header__menu--item paragraph--6">
-                    <a href="Blogs/Testimonial.php" class="header__menu--link">TESTIMONIAL</a>
+                    <a href="../Blogs/Testimonial.php" class="header__menu--link">TESTIMONIAL</a>
                 </li>
                 <li class="header__menu--item paragraph--6">
-                    <a href="Blogs/blogpage.php" class="header__menu--link">BLOG</a>
+                    <a href="../Blogs/blogpage.php" class="header__menu--link">BLOG</a>
                 </li>
             </ul>
             <a href="#" class="header__menu--cart header__menu--link paragraph--6">CART</a>
@@ -303,15 +303,15 @@
     <div class="shop-dropdown">
         <div class="shop-dropdown__column">
             <ul class="shop-dropdown__column--list">
-            <li class="shop-dropdown__column--listItem"><a href="product/?p=10"><img class="shop-dropdown__column--imgbox" src="../images/shop11.png" alt="Ten years Younger Skin">Ten years younger skin rejuvenator</a></li>
+            <li class="shop-dropdown__column--listItem"><a href="../product/?p=10"><img class="shop-dropdown__column--imgbox" src="../images/shop11.png" alt="Ten years Younger Skin">Ten years younger skin rejuvenator</a></li>
             </ul>
         
             <ul class="shop-dropdown__column--list">
-            <li class="shop-dropdown__column--listItem"><a href="product/?p=2"><img class="shop-dropdown__column--imgbox" src="../images/shop12.png" alt="BC Active Lightening Lotion">BC Active Lightening System</a></li>
+            <li class="shop-dropdown__column--listItem"><a href="../product/?p=2"><img class="shop-dropdown__column--imgbox" src="../images/shop12.png" alt="BC Active Lightening Lotion">BC Active Lightening System</a></li>
             </ul>
        
             <ul class="shop-dropdown__column--list">
-            <li class="shop-dropdown__column--listItem"><a href="product/?p=11"><img class="shop-dropdown__column--imgbox" src="../images/shop13.png" alt="BC Extra Strength Lightening Wash">BC Extra Strength Lightening Wash</a></li>
+            <li class="shop-dropdown__column--listItem"><a href="../product/?p=11"><img class="shop-dropdown__column--imgbox" src="../images/shop13.png" alt="BC Extra Strength Lightening Wash">BC Extra Strength Lightening Wash</a></li>
             </ul>
         </div>
     </div>
@@ -337,15 +337,15 @@
     <div class="links-dropdown">
         <div class="links-dropdown__column">
             <ul class="links-dropdown__column--list">
-            <li class="links-dropdown__column--listItem"><a href="Blogs/UnderAttack.php">MEN SKIN UNDER ATTACK</a></li>
-            <li class="links-dropdown__column--listItem"><a href="Blogs/ScienceTech.php">SKIN SCIENCE TECHNOLOGY</a></li>
-            <li class="links-dropdown__column--listItem"><a href="Blogs/SkinLight.php">SKIN LIGHTENING PRODUCTS</a></li>
-            <li class="links-dropdown__column--listItem"><a href="Blogs/PerfectProduct.php">FIND THE PERFECT PRODUCT FOR YOU</a></li>
-            <li class="links-dropdown__column--listItem"><a href="Blogs/8pointlift.php">8POINT LIFT</a></li>
-            <li class="links-dropdown__column--listItem"><a href="Blogs/HairRemoval.php">LASER HAIR REMOVAL</a></li>
-            <li class="links-dropdown__column--listItem"><a href="Blogs/WrinkleRed.php">WRINKLE REDUCTION</a></li>
-            <li class="links-dropdown__column--listItem"><a href="Blogs/WeightTreat.php">WEIGHT LOSS TREATMENT</a></li>
-            <li class="links-dropdown__column--listItem"><a href="Blogs/Bc.php">WHAT BC CAN DO FOR YOU</a></li>
+            <li class="links-dropdown__column--listItem"><a href="../Blogs/UnderAttack.php">MEN SKIN UNDER ATTACK</a></li>
+            <li class="links-dropdown__column--listItem"><a href="../Blogs/ScienceTech.php">SKIN SCIENCE TECHNOLOGY</a></li>
+            <li class="links-dropdown__column--listItem"><a href="../Blogs/SkinLight.php">SKIN LIGHTENING PRODUCTS</a></li>
+            <li class="links-dropdown__column--listItem"><a href="../Blogs/PerfectProduct.php">FIND THE PERFECT PRODUCT FOR YOU</a></li>
+            <li class="links-dropdown__column--listItem"><a href="../Blogs/8pointlift.php">8POINT LIFT</a></li>
+            <li class="links-dropdown__column--listItem"><a href="../Blogs/HairRemoval.php">LASER HAIR REMOVAL</a></li>
+            <li class="links-dropdown__column--listItem"><a href="../Blogs/WrinkleRed.php">WRINKLE REDUCTION</a></li>
+            <li class="links-dropdown__column--listItem"><a href="../Blogs/WeightTreat.php">WEIGHT LOSS TREATMENT</a></li>
+            <li class="links-dropdown__column--listItem"><a href="../Blogs/Bc.php">WHAT BC CAN DO FOR YOU</a></li>
             </ul>
             <ul class="links-dropdown__column--list">
             <li class="links-dropdown__column--listItem"><a href="#"><img class="links-dropdown__column--imgbox" src="../images/links1.png" alt="Lightening Serum"></a></li>
