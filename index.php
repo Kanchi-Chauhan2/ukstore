@@ -183,7 +183,7 @@
                     <a href="#" class="header__menu--link">PRODUCTS<svg class="header__menu--dropdown"> <use href='images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
                 </li>
                 <li class="header__menu--item paragraph--6">
-                    <a href="categories/?c=23" class="header__menu--link">DISCOUNT SET</a>
+                    <a href="categories/?c=22" class="header__menu--link">DISCOUNT SET</a>
                 </li>
                 <li class="header__menu--item paragraph--6">
                     <a href="#" class="header__menu--link">Before/After Photos</a>
@@ -218,12 +218,12 @@
             <ul class="dropdown__column--list">
                 <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=22">UPTO 60% OFF</a></li>
                 <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=21">ALL PRODUCTS</a></li>
-                <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=23">DISCOUNT SET</a></li>
+                <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=22">DISCOUNT SET</a></li>
                 <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=1">BRIGHTENING AND LIGHTENING</a></li>
                 <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=2">FACIAL CLEANSERS</a></li>
                 <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=3">TEN YEARS YOUNGER</a></li>
                 <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=4">EYE AND NECK CREAMS</a></li>
-             
+            
             </ul>
             <ul class="dropdown__column--list">
                 <li class="dropdown__column--listItem"><a href="categories/?c=5">NOURISHING AND TREATMENT</a></li>

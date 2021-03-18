@@ -20,13 +20,26 @@
         if( isset($_GET['c']) ){
             $c = $_GET['c'];
             //---------------------QUERY TO GET TOTAL PRODUCTS---------------------
-            $query = "SELECT `name`, `totalProducts` FROM `categories` WHERE id='$c'";
+            $query = "SELECT `name`, `products`, `totalProducts` FROM `categories` WHERE id='$c'";
             $query_exec = mysqli_query($conn,$query);
-
+            $tempProducts = '';
             while( $row = mysqli_fetch_array($query_exec) ){
                 $totalProducts = $row['totalProducts'];
                 $categoryName = $row['name'];
+                $tempProducts = $row['products'];
             }
+
+            $tempList = getArrayFromString( $tempProducts, ',' );
+            $tempQuery = "";
+
+            for( $i = 0 ; $i < sizeof( $tempList ) ; $i++ ){
+                if ( $i === 0 ){
+                    $tempQuery = $tempList[0];
+                }else{
+                    $tempQuery = $tempQuery . ' OR  ' . $tempList[$i];
+                }
+            }
+
 
             //---------------------Getting Products Using Featured-----------------
 
@@ -46,26 +59,26 @@
 
                 switch($f){
                     case 0:
-                        $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE categories='$c' LIMIT $startRange,$endRange";
+                        $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE `id`=". $tempQuery ." LIMIT $startRange,$endRange";
                         break;
                     case 1:
-                        $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE categories='$c' ORDER BY `products`.`int_smallPrice` ASC LIMIT $startRange,$endRange ";
+                        $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE `id`=". $tempQuery ." ORDER BY `products`.`int_smallPrice` ASC LIMIT $startRange,$endRange ";
                         break;
                     case 2:
-                        $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE categories='$c' ORDER BY `products`.`int_smallPrice` DESC LIMIT $startRange,$endRange ";
+                        $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE `id`=". $tempQuery ." ORDER BY `products`.`int_smallPrice` DESC LIMIT $startRange,$endRange ";
                         break;
                     case 3:
-                        $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE categories='$c'  ORDER BY `products`.`date` ASC LIMIT $startRange,$endRange ";    
+                        $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE `id`=". $tempQuery ."  ORDER BY `products`.`date` ASC LIMIT $startRange,$endRange ";    
                         break;
                     case 4:
-                        $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE categories='$c'  ORDER BY `products`.`date` DESC LIMIT $startRange,$endRange ";    
+                        $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE `id`=". $tempQuery ."  ORDER BY `products`.`date` DESC LIMIT $startRange,$endRange ";    
                         break;
                 }
 
             }else{
-                $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE categories='$c' LIMIT $startRange,$endRange";
+                $query = "SELECT `id`, `name`, `images`,`prices`, `sellingPrices` FROM `products` WHERE `id`=" . $tempQuery . " LIMIT $startRange,$endRange";
             }
-            
+            //echo $query;
             $query_exec = mysqli_query( $conn, $query );
                 
                 while( $row = mysqli_fetch_array( $query_exec ) ){
@@ -178,7 +191,7 @@
     
     <!--``````````````````````````````````  HEADER  `````````````````````````````````````-->
 
-    <header class="header">
+    <header class="header" style="position:relative;">
 
         <!--################################    TOP    ####################################-->
 
@@ -224,7 +237,7 @@
                     <a href="#" class="header__menu--link">PRODUCTS<svg class="header__menu--dropdown"> <use href='../images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
                 </li>
                 <li class="header__menu--item paragraph--6">
-                    <a href="categories/?c=23" class="header__menu--link">DISCOUNT SET</a>
+                    <a href="categories/?c=22" class="header__menu--link">DISCOUNT SET</a>
                 </li>
                 <li class="header__menu--item paragraph--6">
                     <a href="#" class="header__menu--link">Before/After Photos</a>
@@ -259,7 +272,7 @@
             <ul class="dropdown__column--list">
                 <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=22">UPTO 60% OFF</a></li>
                 <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=21">ALL PRODUCTS</a></li>
-                <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=23">DISCOUNT SET</a></li>
+                <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=22">DISCOUNT SET</a></li>
                 <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=1">BRIGHTENING AND LIGHTENING</a></li>
                 <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=2">FACIAL CLEANSERS</a></li>
                 <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=3">TEN YEARS YOUNGER</a></li>
