@@ -330,7 +330,7 @@
                     <a href="#" class="header__menu--link">PRODUCTS<svg class="header__menu--dropdown"> <use href='../images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
                 </li>
                 <li class="header__menu--item paragraph--6">
-                    <a href="categories/?c=23" class="header__menu--link">DISCOUNT SET</a>
+                    <a href="?c=23" class="header__menu--link">DISCOUNT SET</a>
                 </li>
                 <li class="header__menu--item paragraph--6">
                     <a href="#" class="header__menu--link">Before/After Photos</a>

@@ -237,7 +237,7 @@
                     <a href="#" class="header__menu--link">PRODUCTS<svg class="header__menu--dropdown"> <use href='../images/sprite.svg#icon-chevron-small-right'></use> </svg></a>
                 </li>
                 <li class="header__menu--item paragraph--6">
-                    <a href="categories/?c=22" class="header__menu--link">DISCOUNT SET</a>
+                    <a href="?c=22" class="header__menu--link">DISCOUNT SET</a>
                 </li>
                 <li class="header__menu--item paragraph--6">
                     <a href="#" class="header__menu--link">Before/After Photos</a>
@@ -270,32 +270,32 @@
     <div class="dropdown">
         <div class="dropdown__column">
             <ul class="dropdown__column--list">
-                <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=22">UPTO 60% OFF</a></li>
-                <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=21">ALL PRODUCTS</a></li>
-                <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=22">DISCOUNT SET</a></li>
-                <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=1">BRIGHTENING AND LIGHTENING</a></li>
-                <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=2">FACIAL CLEANSERS</a></li>
-                <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=3">TEN YEARS YOUNGER</a></li>
-                <li class="dropdown__column--listItem"><a class="paragraph--6" href="categories/?c=4">EYE AND NECK CREAMS</a></li>
+                <li class="dropdown__column--listItem"><a class="paragraph--6" href="?c=22">UPTO 60% OFF</a></li>
+                <li class="dropdown__column--listItem"><a class="paragraph--6" href="?c=21">ALL PRODUCTS</a></li>
+                <li class="dropdown__column--listItem"><a class="paragraph--6" href="?c=22">DISCOUNT SET</a></li>
+                <li class="dropdown__column--listItem"><a class="paragraph--6" href="?c=1">BRIGHTENING AND LIGHTENING</a></li>
+                <li class="dropdown__column--listItem"><a class="paragraph--6" href="?c=2">FACIAL CLEANSERS</a></li>
+                <li class="dropdown__column--listItem"><a class="paragraph--6" href="?c=3">TEN YEARS YOUNGER</a></li>
+                <li class="dropdown__column--listItem"><a class="paragraph--6" href="?c=4">EYE AND NECK CREAMS</a></li>
              
             </ul>
             <ul class="dropdown__column--list">
-                <li class="dropdown__column--listItem"><a href="categories/?c=5">NOURISHING AND TREATMENT</a></li>
-                <li class="dropdown__column--listItem"><a href="categories/?c=6">ACNE AND BLEMISHES</a></li>
-                <li class="dropdown__column--listItem"><a href="categories/?c=7">MASQUES</a></li>
-                <li class="dropdown__column--listItem"><a href="categories/?c=8">SHAVING BUMP S MEN/WOMEN</a></li>
-                <li class="dropdown__column--listItem"><a href="categories/?c=9">DARK KNUCKLES,HANDS & FEET</a></li>
-                <li class="dropdown__column--listItem"><a href="categories/?c=10">MINERAL MAKEUP</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=5">NOURISHING AND TREATMENT</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=6">ACNE AND BLEMISHES</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=7">MASQUES</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=8">SHAVING BUMP S MEN/WOMEN</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=9">DARK KNUCKLES,HANDS & FEET</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=10">MINERAL MAKEUP</a></li>
                 <li class="dropdown__column--listItem"><a href="#">STRETCH MARKS</a></li>
             </ul>
             <ul class="dropdown__column--list">
-                <li class="dropdown__column--listItem"><a href="categories/?c=11">SUN BLOCK</a></li>
-                <li class="dropdown__column--listItem"><a href="categories/?c=12">BLEACHING AND LIGHTENING</a></li>
-                <li class="dropdown__column--listItem"><a href="categories/?c=13">PEELS</a></li>
-                <li class="dropdown__column--listItem"><a href="categories/?c=14">SOAP</a></li>
-                <li class="dropdown__column--listItem"><a href="categories/?c=15">SERUM</a></li>
-                <li class="dropdown__column--listItem"><a href="categories/?c=16">WASH</a></li>
-                <li class="dropdown__column--listItem"><a href="categories/?c=17">SCRUB</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=11">SUN BLOCK</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=12">BLEACHING AND LIGHTENING</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=13">PEELS</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=14">SOAP</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=15">SERUM</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=16">WASH</a></li>
+                <li class="dropdown__column--listItem"><a href="?c=17">SCRUB</a></li>
                
             </ul>
                     </div>
@@ -318,11 +318,11 @@
     <div class="products-dropdown">
         <div class="products-dropdown__column">
             <ul class="products-dropdown__column--list">
-            <li class="products-dropdown__column--listItem"><a href="categories/?c=22">Discount Set</a></li>
-            <li class="products-dropdown__column--listItem"><a href="categories/?c=1">Brightening and lightening</a></li>
-            <li class="products-dropdown__column--listItem"><a href="categories/?c=3">Ten Years Younger</a></li>
-            <li class="products-dropdown__column--listItem"><a href="categories/?c=6">Acne and Blemishes</a></li>
-            <li class="products-dropdown__column--listItem"><a href="categories/?c=9">Dark Knuckles, hands & Feet</a></li>
+            <li class="products-dropdown__column--listItem"><a href="?c=22">Discount Set</a></li>
+            <li class="products-dropdown__column--listItem"><a href="?c=1">Brightening and lightening</a></li>
+            <li class="products-dropdown__column--listItem"><a href="?c=3">Ten Years Younger</a></li>
+            <li class="products-dropdown__column--listItem"><a href="?c=6">Acne and Blemishes</a></li>
+            <li class="products-dropdown__column--listItem"><a href="?c=9">Dark Knuckles, hands & Feet</a></li>
             </ul>
         </div>
     </div>
@@ -542,11 +542,11 @@
 
                     </div>
                     <ul class="collections__sort--selection collections__paragraph paragraph--6">
-                        <li class="paragraph--6 collections__paragraph collections__sort--option" data-sort='featured'><a href="<?php echo $domainPrefix.'categories/?c='.$c.'&p=0&f=0' ?>">Featured</a> </li>
-                        <li class="paragraph--6 collections__paragraph collections__sort--option" data-sort='pricel'><a href="<?php echo $domainPrefix.'categories/?c='.$c.'&p=0&f=1' ?>">Price, low to high</a></li>
-                        <li class="paragraph--6 collections__paragraph collections__sort--option" data-sort='priceh'><a href="<?php echo $domainPrefix.'categories/?c='.$c.'&p=0&f=2' ?>">Price, high to low</a></li>
-                        <li class="paragraph--6 collections__paragraph collections__sort--option" data-sort='dateo'><a href="<?php echo $domainPrefix.'categories/?c='.$c.'&p=0&f=3' ?>">Date, old to new</a></li>
-                        <li class="paragraph--6 collections__paragraph collections__sort--option" data-sort='daten'><a href="<?php echo $domainPrefix.'categories/?c='.$c.'&p=0&f=4' ?>">Date, new to old</a></li>
+                        <li class="paragraph--6 collections__paragraph collections__sort--option" data-sort='featured'><a href="<?php echo $domainPrefix.'?c='.$c.'&p=0&f=0' ?>">Featured</a> </li>
+                        <li class="paragraph--6 collections__paragraph collections__sort--option" data-sort='pricel'><a href="<?php echo $domainPrefix.'?c='.$c.'&p=0&f=1' ?>">Price, low to high</a></li>
+                        <li class="paragraph--6 collections__paragraph collections__sort--option" data-sort='priceh'><a href="<?php echo $domainPrefix.'?c='.$c.'&p=0&f=2' ?>">Price, high to low</a></li>
+                        <li class="paragraph--6 collections__paragraph collections__sort--option" data-sort='dateo'><a href="<?php echo $domainPrefix.'?c='.$c.'&p=0&f=3' ?>">Date, old to new</a></li>
+                        <li class="paragraph--6 collections__paragraph collections__sort--option" data-sort='daten'><a href="<?php echo $domainPrefix.'?c='.$c.'&p=0&f=4' ?>">Date, new to old</a></li>
                     </ul>
                 </div>
             </div>
