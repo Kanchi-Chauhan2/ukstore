@@ -274,7 +274,7 @@
     </div>
     <div class="tv-dropdown">
         <div class="tv-dropdown__column">
-        <iframe style="width:100%;margin-bottom:2rem;" src="https://www.youtube.com/embed/6EsDhpe6suQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe style="width:50%; height:100%; margin-bottom:2rem;" src="https://www.youtube.com/embed/6EsDhpe6suQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <ul class="tv-dropdown__column--list">
             <li class="tv-dropdown__column--listItem"><a href="https://youtu.be/6EsDhpe6suQ">Body Contours Advance Skin & Hair Care made of 100% Natural Organic Herbal Extracts</a></li>
             </ul>
@@ -328,9 +328,10 @@
             dropdown.classList.add('select');
             dropdown.style.height = (dropdown.scrollHeight)+'px';
 
+
             function hover(){
                 dropdown.classList.add('select');
-                dropdown.style.height = dropdown.scrollHeight+'px';
+                dropdown.style.height = (dropdown.scrollHeight)+'px';
             }
 
             function hoverout(){
@@ -575,7 +576,7 @@
             <p class="paragraph--6 trending__paragraph trending__box--paragraph">
                 Get styled with the high-fashion products and transform yourself.
             </p>
-            <a href="#" class="paragraph--6 trending__paragraph trending__box--link">
+            <a href="categories/?c=22" class="paragraph--6 trending__paragraph trending__box--link">
                 TRENDING
             </a>
         </div>

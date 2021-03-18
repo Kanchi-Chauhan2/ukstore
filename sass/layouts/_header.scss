@@ -151,9 +151,9 @@
 
         &--link{
             text-transform: uppercase;
-            font-size: 1.2rem;
+            font-size: 0.9rem;
             margin-left: 1.2rem;
-            margin-right: 1.2rem;
+            margin-right: 2rem;
             padding-bottom: 2rem;
             height: 100%;
             display: flex;
@@ -161,7 +161,7 @@
             justify-content: center;
             color: #444444;
             letter-spacing: 1px;
-            font-weight: 700;
+            font-weight: 400;
             &:hover{
                 color:black;
             }
@@ -245,24 +245,26 @@
 .dropdown{
     text-decoration: none;
     color:#444444;
-
+    width:100%;
     display: block;
     position: absolute;
     top: 15rem;
     z-index: 10000000000000;
-    width: 100%;
     visibility:hidden;
     &__column{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
         justify-items: center;
         color:#444444;
+        width:100%;
         &--list{
-            margin-top:1rem;
-            margin-bottom:1rem;
+            margin-top:3rem;
+            margin-bottom:3rem;
         }
         &--listItem a{
+            display:grid;
+            justify-items: space-between;
+
             color:#444444;
             margin-top:1rem;
         }
@@ -284,6 +286,12 @@
         margin-bottom:1rem;
         justify-items: center;
         justify-content: center;
+        width:100%;
+
+        &--imgbox{
+            padding:2rem;
+            color:#444444;
+        }
 
         &--list a{
             display:flex;
@@ -293,6 +301,7 @@
             margin-bottom:1rem;
             justify-items: center;
             justify-content: center;
+            width:calc(100-3rem);
 
         }
     }
@@ -308,16 +317,27 @@
     z-index: 10000000000000;
     width: 100%;
     visibility:hidden;
-    &__column--listItem a{
+    &__column{
         display:flex;
         justify-content: center;
+        margin:1rem;
+        justify-items: space-between;
         color:#444444;
+        &--list li{   
+            color:#444444;
+            margin-top:1rem;
+            margin-bottom:1rem;
+        }
+        &--listItem a{
+            color:#444444;
+            margin-bottom:1rem;
+        }
     }
 }
 .tv-dropdown{
     text-decoration: none;
     color:#444444;
-
+    padding:2rem;
     display: block;
     position: absolute;
     top: 15rem;
@@ -325,12 +345,19 @@
     width: 100%;
     text-align:center;
     visibility:hidden;
-
+    &__column{
+        &__list{
+            display:block;
+        }
+        &--listItem a{
+            color:#444444;
+            margin-bottom: 1rem;
+        }
+    }
 }
 .links-dropdown{
     text-decoration: none;
     color:#444444;
-
     display: block;
     position: absolute;
     top: 15rem;
@@ -340,15 +367,17 @@
     &__column{
         display:flex;
         justify-content: center;
+        align-items: space-between;
+        margin-top:2rem;
+        padding:2rem;
         
-        &--list{
-            margin-top:2rem;
-            margin-right:3rem;
+        &--list li{
+            margin-top:1.5rem;
+            margin-right:2rem;
         }
         &--listItem a{
             color:#444444;
-            margin-top:2rem;
-            margin-bottom:1rem;
+            
         }
     }
 
