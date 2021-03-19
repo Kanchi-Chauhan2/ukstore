@@ -383,76 +383,76 @@
             dropdown.style.height ='0px';
         }
 </script>
-<div class="blog">
-        <div class="blog__top">
-            <h1 class="heading--1 blog__heading blog__top--heading">
+<div class="bblog">
+        <div class="bblog__top">
+            <h1 class="heading--1 bblog__heading bblog__top--heading">
                 our latest news
             </h1>
-            <p class="paragraph--3 blog__paragraph blog__top--paragraph">
+            <p class="paragraph--3 bblog__paragraph bblog__top--paragraph">
                 BEAUTILICIOUS BLOG
             </p>
         </div>
 
-        <div class="blog__posts">
-            <div class="blog__post">
-                <a href="Blog1.php#" class="blog__post--imagebox">
+        <div class="bblog__posts">
+            <div class="bblog__post">
+                <a href="Blog1.php#" class="bblog__post--imagebox">
                     <img src="../images/Untitled-2.JPG" alt="" class="blog__post--image" >
                 </a>
-                <a href="Blog1.php#" class="paragraph--5 blog__paragraph blog__post--headingLink">
+                <a href="Blog1.php#" class="paragraph--5 bblog__paragraph bblog__post--headingLink">
                     THE BEST PART ABOUT MAKEUP BRUSH AND ITS TYPES
                 </a>
-                <p class="paragraph--6 blog__paragraph blog__post--date">
+                <p class="paragraph--6 bblog__paragraph bblog__post--date">
                     DEC 09 2019
                 </p>
-                <a href="Blog1.php#" class="paragraph--6 blog__paragraph blog__post--button">
+                <a href="Blog1.php#" class="paragraph--6 bblog__paragraph bblog__post--button">
                     READ MORE
                 </a>
             </div>
-            <div class="blog__post">
-                <a href="Blog2.php#" class="blog__post--imagebox">
-                    <img src="../images/3.JPG" alt="" class="blog__post--image" >
+            <div class="bblog__post">
+                <a href="Blog2.php#" class="bblog__post--imagebox">
+                    <img src="../images/3.JPG" alt="" class="bblog__post--image" >
                 </a>
-                <a href="Blog2.php#" class="paragraph--5 blog__paragraph blog__post--headingLink">
+                <a href="Blog2.php#" class="paragraph--5 bblog__paragraph bblog__post--headingLink">
                     THE BEST PART ABOUT MAKEUP BRUSH AND ITS TYPES
                 </a>
-                <p class="paragraph--6 blog__paragraph blog__post--date">
+                <p class="paragraph--6 bblog__paragraph bblog__post--date">
                     DEC 09 2019
                 </p>
-                <a href="Blog2.php#" class="paragraph--6 blog__paragraph blog__post--button">
+                <a href="Blog2.php#" class="paragraph--6 bblog__paragraph bblog__post--button">
                     READ MORE
                 </a>
             </div>
-            <div class="blog__post">
-                <a href="Blog3.php#" class="blog__post--imagebox">
-                    <img src="../images/Untitled-1.JPG" alt="" class="blog__post--image" >
+            <div class="bblog__post">
+                <a href="Blog3.php#" class="bblog__post--imagebox">
+                    <img src="../images/Untitled-1.JPG" alt="" class="bblog__post--image" >
                 </a>
-                <a href="Blog3.php#" class="paragraph--5 blog__paragraph blog__post--headingLink">
+                <a href="Blog3.php#" class="paragraph--5 bblog__paragraph bblog__post--headingLink">
                     THE BEST PART ABOUT MAKEUP BRUSH AND ITS TYPES
                 </a>
-                <p class="paragraph--6 blog__paragraph blog__post--date">
+                <p class="paragraph--6 bblog__paragraph bblog__post--date">
                     DEC 09 2019
                 </p>
-                <a href="Blog3.php#" class="paragraph--6 blog__paragraph blog__post--button">
+                <a href="Blog3.php#" class="paragraph--6 bblog__paragraph bblog__post--button">
                     READ MORE
                 </a>
             </div>
-            <div class="blog__post">
-                <a href="Blog4.php#" class="blog__post--imagebox">
-                    <img src="../images/1.JPG" alt="" class="blog__post--image" >
+            <div class="bblog__post">
+                <a href="Blog4.php#" class="bblog__post--imagebox">
+                    <img src="../images/1.JPG" alt="" class="bblog__post--image" >
                 </a>
-                <a href="Blog4.php#" class="paragraph--5 blog__paragraph blog__post--headingLink">
+                <a href="Blog4.php#" class="paragraph--5 blog__paragraph bblog__post--headingLink">
                     THE BEST PART ABOUT MAKEUP BRUSH AND ITS TYPES
                 </a>
-                <p class="paragraph--6 blog__paragraph blog__post--date">
+                <p class="paragraph--6 bblog__paragraph bblog__post--date">
                     DEC 09 2019
                 </p>
-                <a href="Blog4.php#" class="paragraph--6 blog__paragraph blog__post--button">
+                <a href="Blog4.php#" class="paragraph--6 bblog__paragraph bblog__post--button">
                     READ MORE
                 </a>
             </div>
         </div>
 
-        <a href="#" class="blog__button paragraph--6">VIEW THE BLOG</a>
+        <a href="#" class="bblog__button paragraph--6">VIEW THE BLOG</a>
 
     </div>
     <footer>

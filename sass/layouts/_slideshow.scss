@@ -31,7 +31,12 @@
         background-image: url(../images/slide1.jpg);
         animation: slideIN 1s;
         //display: none;
+        @media only screen and (max-width:768px){
+            background-position: 138rem;
+        }
     }
+    
+
 
     &--2{
         display: none;

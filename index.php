@@ -61,6 +61,54 @@
 
 </head>
 <body>
+     <!--````````````````````````````````POP UP`````````````````````````````````````````-->
+
+     <div class="pop-up-container">
+        <div class="pop-up-window">
+            <div class="flex-container">
+                <div  class="flex">
+                <img src="images/popup-image.jpg" alt="" class="popup__image">
+                </div>
+                <div  class="flex">
+                    <div class="flex1-container">
+                    <h1 class="heading-1">JOIN THE WILD PALM FAN CLUB</h1>
+                    <input type="email" class="ContactFormEmailpopup" name="contact[email]" placeholder="Email" value>
+                    <div class="subscribeup">
+                    <a href="#" style="color:white;">SUBSCRIBE</a>
+                    </div>
+                    <div class="socialBox">
+                <a href="#" class="subscribe__link">
+                    <svg class="subscribe__icon">
+                        <use href='images/sprite.svg#icon-facebook'></use>
+                    </svg>
+                </a>
+                <a href="#" class="subscribe__link">
+                    <svg class="subscribe__icon">
+                        <use href='images/sprite.svg#icon-instagram'></use>
+                    </svg>
+                </a>
+                <a href="#" class="subscribe__link">
+                    <svg class="subscribe__icon">
+                        <use href='images/sprite.svg#icon-twitter'></use>
+                    </svg>
+                </a>
+                <a href="#" class="subscribe__link">
+                    <svg class="subscribe__icon">
+                        <use href='images/sprite.svg#icon-pinterest'></use>
+                    </svg>
+                </a>
+            </div>
+                    </div>
+                    <div class="closee">&times;</div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
 
     <!--``````````````````````````````````  CART  `````````````````````````````````````-->
 
@@ -444,6 +492,28 @@
             dropdown.classList.remove('select');
             dropdown.style.height ='0px';
         }
+        const closebutton=document.querySelector(".closee");
+        const loginpopup=document.querySelector(".pop-up-container");
+        const loginpopupwindow=document.querySelector(".pop-up-window");
+        window.addEventListener("load",function(){
+            showPopup();
+        })
+        function showPopup(){
+            const timeLimit=3
+            let i=0;
+            const timer=setInterval(function(){
+                i++;
+                if(i==timeLimit){
+                    clearInterval(timer);
+                    loginpopup.classList.add("show");
+                    loginpopupwindow.classList.add("show");
+                }
+            },1000);
+        }
+        closebutton.addEventListener("click",function(){
+            loginpopup.classList.remove("show");
+        })
+
     </script>
     <!--``````````````````````````````````  SLIDESHOW  `````````````````````````````````````-->
 
