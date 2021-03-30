@@ -62,7 +62,7 @@
 </head>
 <body>
      <!--````````````````````````````````POP UP`````````````````````````````````````````-->
-
+<!--
      <div class="pop-up-container">
         <div class="pop-up-window">
             <div class="flex-container">
@@ -106,7 +106,7 @@
             </div>
             
         </div>
-    </div>
+    </div>-->
 
 
 
